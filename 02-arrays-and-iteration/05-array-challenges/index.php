@@ -10,6 +10,13 @@
 */
 echo '<h3>Sum Of An Array</h3>';
 
+$numbers = [1, 2, 3, 4, 5];
+
+$sum = array_sum($numbers);
+
+$amount = count($numbers);
+
+echo 'The sum of the ' . $amount . ' numbers is ' . $sum;
 /*
   Challenge 2: Colors array
 
@@ -25,6 +32,20 @@ echo '<h3>Colors Array</h3>';
 
 $colors = ['red', 'blue', 'green', 'yellow'];
 
+$colors = array_reverse($colors);
+
+//array_push($colors, 'purple');
+//$colors[] = 'orange';
+
+// Using array_merge
+$colors = array_merge($colors, ['purple', 'orange']);
+
+array_splice($colors, 1, 1, 'pink');
+
+array_pop($colors);
+
+//print_r($colors);
+
 /*
   Challenge 3: Job listings array
 
@@ -35,3 +56,44 @@ $colors = ['red', 'blue', 'green', 'yellow'];
 */
 
 echo '<h3>Job Listings</h3>';
+
+$listings = [
+    [
+        'id' => 1,
+        'job_title' => 'PHP Developer',
+        'company' => 'ABC Company',
+        'contact_email' => 'john@gmail.com',
+        'contact_phone' => '123-456-7890',
+        'skills' => ['PHP', 'MySQL', 'JavaScript']
+    ],
+    [
+        'id' => 2,
+        'job_title' => 'Web Designer',
+        'company' => '123 Company',
+        'contact_email' => 'jane@gmail.com',
+        'contact_phone' => '555-456-7890',
+        'skills' => ['Photoshop', 'Illustrator', 'CSS']
+    ],
+    [
+        'id' => 3,
+        'job_title' => 'Web Developer',
+        'company' => 'ABC Company',
+        'contact_email' => 'john@gmail.com',
+        'contact_phone' => '123-456-7890',
+        'skills' => ['PHP', 'MySQL', 'JavaScript']
+    ]
+];
+
+$listings[] = [
+    'id' => 4,
+    'job_title' => 'Graphic Designer',
+    'company' => '123 Company',
+    'contact_email' => 'beth@gmail.com',
+    'contact_phone' => '222-456-7890',
+    'skills' => ['Photoshop', 'Illustrator', 'CSS']
+];
+
+//print_r($listings);
+
+//echo $listings[1]['job_title'];
+echo $listings[2]['skills'][0];
