@@ -1,3 +1,12 @@
+<?php
+//
+
+$i = 0;
+while ($i < 5){
+    $j = 0;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,3 +1,24 @@
+<?php
+// Basic For Loop
+//for($i = 0; $i < 10; $i++){
+//    echo $i . '<br />';
+//}
+
+// Basic While Loop
+//$i = 0;
+//while ($i < 10){
+//   echo $i . '<br />';
+//   $i++;
+//}
+
+//Basic Do-While Loop
+$i = 0;
+do{
+    echo $i;
+    $i++;
+    } while($i <10);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +38,23 @@
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6 mt-6">
             <!-- Output -->
+            <ul>
+<!--                --><?php //for ($i = 0; $i <= 10; $i++): ?>
+<!--                    <li>Number: --><?php //= $i ?><!--</li>-->
+<!--                --><?php //endfor;; ?>
+<!--                --><?php //$i = 0; while($i < 10): ?>
+<!--                <li>Number: --><?php //= $i ?><!--</li>-->
+<!--                --><?php //$i++;
+//                endwhile; ?>
+                <ul>
+                    <?php $i = 0;
+                    do{ ?>
+                    <li>Number: <?= $i ?></li>
+                    <?php $i++;
+                    } while($i <10) ?>
+                </ul>
+
+            </ul>
         </div>
     </div>
 </body>
